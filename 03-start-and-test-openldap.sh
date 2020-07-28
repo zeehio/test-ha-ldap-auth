@@ -75,10 +75,10 @@ cat << EOF
 homeassistant:
   auth_providers:
     - type: ldap
-      active_directory: false
       server: ldap.localhost
       port: 389
       encryption: starttls
-      cert_validation: "$PWD/certificates/cacert.pem" # FIXME: can we give a path to a custom certificate?
+      bind_type: user
+      ca_certs_file: $PWD/certificates/cacert.pem
       base_dn: ou=Users,dc=ldap,dc=localhost
 EOF
