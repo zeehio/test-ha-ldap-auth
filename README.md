@@ -3,9 +3,9 @@ custom certificate.
 
 It requires the following packages/tools:
 
-- docker
-- openssl
-- ldap-utils
+- docker: (Follow installation instructions from docker website)
+- openssl: `sudo apt install openssl`
+- ldap-utils: `sudo apt install ldap-utils`
 
 It assumes the user that runs the script has the privilege to create docker containers.
 
